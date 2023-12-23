@@ -9,7 +9,6 @@ public class TestBases {
     @BeforeAll
     static void openSite() {
         open("https://www.citilink.ru/");
-        Configuration.holdBrowserOpen = true;
         Configuration.pageLoadStrategy = "eager";
 
     }
