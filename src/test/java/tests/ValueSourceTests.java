@@ -19,7 +19,7 @@ public class ValueSourceTests extends TestBases {
     @ParameterizedTest(name = "Успешный поиск товара по поисковому запросу: {0}")
     @DisplayName("Поиск и проверка товаров")
     @Tag("BLOCKER")
-    public void successfulSearchProduct(String searchProduct) {
+    public void successfulSearchProductTest(String searchProduct) {
         $(".css-1977rpo").setValue(searchProduct).pressEnter();
         $(".app-catalog-1pwu1hf").$$(".app-catalog-fjtfe3").shouldBe(sizeGreaterThan(0));
     }

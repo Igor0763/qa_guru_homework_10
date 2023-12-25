@@ -16,7 +16,7 @@ public class EnumsTests extends TestBases {
     @ParameterizedTest(name = "Успешный поиск товара по поисковому запросу: {0}")
     @DisplayName("Поиск и проверка товаров")
     @Tag("BLOCKER")
-    public void successfulSearchProduct(Product product) {
+    public void successfulSearchProductTest(Product product) {
         $(".css-1977rpo").setValue(product.description).pressEnter();
         $(".app-catalog-1pwu1hf").$$(".app-catalog-fjtfe3").shouldBe(sizeGreaterThan(0));
     }
